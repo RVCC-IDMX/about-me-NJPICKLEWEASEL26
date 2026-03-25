@@ -7,7 +7,13 @@ color: #9300F5;
 h1,h2,h3,h4,h5,h6 {
 font-family:"Overlock SC";
 font-size: 40pt;
+text-align: center;
 }
+
+h1, {
+    font-size:40pt;
+}
+
 
 header {
     text-align: center;
@@ -31,4 +37,15 @@ header {
 
 footer {
     font-size: 75%;
+}
+
+h2 {
+    text-align: left;
+}
+ul {
+    text-align: left;
+}
+
+div {
+    text-align: left;
 }
