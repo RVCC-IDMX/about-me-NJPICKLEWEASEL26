@@ -18,7 +18,7 @@ text-align: center;
 margin: 0.1em;
 }
 
-h1, {
+h1 {
     font-size:40pt;
 }
 
@@ -108,4 +108,23 @@ figure {
     max-width: 35rem;
     margin: 0 auto;
 }
+/* =========================
+  Dropcaps
+   ========================= */
+@media screen and (min-width:960px) {
+    
+    figure{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    figcaption{
+        display: flex; 
+        justify-content: center;
+        align-items:center;
+        font-size: 2rem;
+        border: #1600C2;
+        border-width: 1rem;
+    }
+    
 
+}
