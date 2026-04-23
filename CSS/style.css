@@ -1,9 +1,16 @@
+
+/* =========================
+   BODY / PAGE STYLES
+   ========================= */
 body {
 font-family:rye;
 background-color: #FAA901;
 color: #9300F5;
 }
 
+/* =========================
+   HEADINGS
+   ========================= */
 h1,h2,h3,h4,h5,h6 {
 font-family:"Overlock SC";
 font-size: 40pt;
@@ -14,11 +21,16 @@ h1, {
     font-size:40pt;
 }
 
-
+/* =========================
+   Header
+   ========================= */
 header {
     text-align: center;
 }
 
+/* =========================
+   hero/footer
+   ========================= */
 #hero,footer {
     background-color:#F4306E;
     text-align: center;
@@ -31,25 +43,36 @@ header {
     width: 300px
 }
 
-#bio {
-    text-align: center;
-}
-
 footer {
     font-size: 75%;
 }
 
-h2 {
-    text-align: left;
+/* =========================
+   Bio
+   ========================= */
+#bio {
+    text-align: center;
 }
+
+/* =========================
+   Section styles
+   ========================= */
+section 
+h2 {
+    text-align: center;
+}
+
 ul {
-    text-align: left;
+    text-align: center;
 }
 
 div {
-    text-align: left;
+    text-align: center;
 }
 
+/* =========================
+   GALLERY
+   ========================= */
 figure {
     background-color:#F4306E;
 
@@ -68,6 +91,9 @@ figure {
     text-align: center;
 }
 
+/* =========================
+   Dracula Exerpt
+   ========================= */
 #lit {
     border: 4px; border-color: #1600C2;
     margin-bottom: 2rem;
