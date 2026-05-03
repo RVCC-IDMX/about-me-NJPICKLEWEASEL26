@@ -1,16 +1,12 @@
 
-/* =========================
-   BODY / PAGE STYLES
-   ========================= */
+/* Body/Page Styles*/
 body {
 font-family:rye;
 background-color: #FAA901;
 color: #9300F5;
 }
 
-/* =========================
-   HEADINGS
-   ========================= */
+/* Headings*/
 h1,h2,h3,h4,h5,h6 {
 font-family:"Overlock SC";
 font-size: 40pt;
@@ -22,16 +18,12 @@ h1 {
     font-size:40pt;
 }
 
-/* =========================
-   Header
-   ========================= */
+/* Header */
 header {
     text-align: center;
 }
 
-/* =========================
-   hero/footer
-   ========================= */
+/*hero/footer*/
 #hero,footer {
     background-color:#F4306E;
     text-align: center;
@@ -48,16 +40,14 @@ footer {
     font-size: 75%;
 }
 
-/* =========================
+/* 
    Bio
-   ========================= */
+   */
 #bio {
     text-align: center;
 }
 
-/* =========================
-   Section styles
-   ========================= */
+/*Section styles*/
 
 h2 {
     text-align: center;
@@ -73,9 +63,7 @@ div {
     text-align: center;
 }
 
-/* =========================
-   GALLERY
-   ========================= */
+/*Gallery */
 figure {
     background-color:#F4306E;
 
@@ -94,9 +82,7 @@ figure {
     text-align: center;
 }
 
-/* =========================
-   Dracula Exerpt
-   ========================= */
+    /* Dracula Exerpt */
 #lit {
     border: 4px; border-color: #1600C2;
     margin-bottom: 1rem;
@@ -108,9 +94,7 @@ figure {
     max-width: 35rem;
     margin: 0 auto;
 }
-/* =========================
-  Tablet size
-   ========================= */
+    /*Tablet size */
 @media screen and (min-width:960px) {
     
     figure{
@@ -133,9 +117,7 @@ figure {
         columns: 25rem;
     }
 }
-/* =========================
-  Large Screen Size
-   ========================= */
+    /*Large Screen Size*/
    @media screen and (min width 100em) {
     #gallery {
         display:grid; 
@@ -151,3 +133,12 @@ figure {
         display: block;
     }
    }
+
+   /* Contact Form */
+
+#formElements {
+text-align: left;
+font-family: Arial;
+display:grid
+
+}

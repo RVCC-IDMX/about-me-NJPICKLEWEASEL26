@@ -126,12 +126,84 @@
 
 
 
+            <Section id="contact"></Section>
+
+                <h2>Contact Us:</h2>
+
+                <form id="contactForm" name="contactForm" method="post" 
+                data-netlify="true">
+
+                    <Fieldset>
+                        <Legend>Contact Form</Legend>
+
+                        <div id="formElements">
+                        <!-- Name-->
+                        <label for="Name">Name (Required)</label> 
+                        <input type="text" id="name" name="name" required>
+
+
+                        <!-- Email -->
+                        <label for="email">Email (Required)</label> 
+                        <input type="email" id="email" name="email" 
+                        required>
+
+                        <!-- Phone -->
+                        <label for="Phone">Phone (Optional)</label> 
+                        <input type="tel" id="Phone" name="Phone">
+
+
+                        <!-- Phone Type-->
+                        <label for="phonetype">Phone type (Optional)</label>
+                        <select id="phonetype" name="phonetype">
+                        <option value="" selected>Select phone type</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Work">Work</option>
+                        <option value="Home">Home</option>
+
+                        </select>
+
+                        <!-- Message -->
+                        <label for="Message">Message (Optional)</label>
+                        <Textarea id="message" name="message" rows="8"></Textarea>
+
+                        <!-- Reply -->
+                        <fieldset>
+                        <legend>Would you like a reply?</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" id="message-yes"
+                                name="reply" value="Yes, I would like a reply.">
+                                <label for="message-yes">Yes,I would like a reply.</label> 
+                            </li>
+
+
+                            <li>
+                                <input type="radio" id="message-no"
+                                name="reply" value="No, I would not like a reply." checked>
+                                <label for="message-no">No, I would not like a reply.</label> 
+                            </li>
+                        </ul>
+
+                        </fieldset>
+                        
+
+                            </div>
+
+                    </Fieldset>
+
+                    <!-- Submit -->
+                   <Button type="submit">Send</Button>
+
+
+                </form>
     </main>
+
     <footer>
 
         ©2026 - Casey Walsh
 
     </footer>
+
 </body>
 
 </html>
