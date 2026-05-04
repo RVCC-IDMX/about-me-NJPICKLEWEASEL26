@@ -139,6 +139,44 @@ figure {
 #formElements {
 text-align: left;
 font-family: Arial;
-display:grid
+display:grid;
+row-gap: 0.5em;
+}
 
+#contact {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #F4306E;
+    color: white;
+}
+
+fieldset {
+border: 2px solid;
+margin-top: 1em;
+margin-bottom: 1em;
+}
+
+legend {
+    background-color: #9300F5;
+    padding: .5em ;
+    color: white;
+    font-family: Arial
+}
+
+#contact input, #contact textarea,#contact select, #contact button {
+    padding: 0.5em;
+}
+
+#contact ul{
+    list-style: none;
+    padding: 0px;
+}
+
+#contact button {
+    background-color: #9300F5;
+    color: white;
+    border: 1px solid #1600C2;
+    max-width: 400px;
+   
 }
