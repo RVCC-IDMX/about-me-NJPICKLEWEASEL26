@@ -98,7 +98,7 @@ such that no text wraps  */
     justify-content: space-between;
 }
 
-.navbar ul {
+.navbar ul { 
     display: flex;
     justify-content: space-between;
   
