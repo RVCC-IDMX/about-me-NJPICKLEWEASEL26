@@ -4,6 +4,7 @@ body {
 font-family:rye;
 background-color: gray;
 color: #9300F5;
+ line-height: 1.5;
 }
 
 /* Headings*/
@@ -11,7 +12,8 @@ h1,h2,h3,h4,h5,h6 {
 font-family:"Overlock SC";
 font-size: 40pt;
 text-align: center;
-margin: 0.1em;
+margin: 0.5em;
+color: whitesmoke;
 }
 
 h1 {
@@ -27,17 +29,27 @@ header {
 #hero,footer {
     background-color:#F4306E;
     text-align: center;
-    padding:10px;
-    border: 2px solid #1600C2;
-
+    padding:1.5rem;
+  border:4px solid #1600C2;
+  border-radius: 15px;
 }
 
 #hero img {
-    width: 300px
+    width: 300px;
+    max-width: 90%;
+   border-radius: 20px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.50);
+}
+
+#hero p {
+    color: whitesmoke;
+    font-weight: bold;
+    margin: 0.5rem;
+ 
 }
 
 footer {
-    font-size: 75%;
+    font-size: 1rem;
 }
 
 /* 
@@ -45,18 +57,40 @@ footer {
    */
 #bio {
     text-align: center;
+    background-color: #F4306E;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border: 3px solid #1600C2;
+    border-radius: 12px;
+    color: whitesmoke;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 /*Section styles*/
+section {
+    margin-bottom: 2rem;
+}
 
 h2 {
     text-align: center;
+    margin: 2rem auto 1rem;
+    font-size: 3rem;
+    color: #9300F5;
 }
-
-ul {
-    text-align: center;
-    padding-left: 0;
+/*Hobbies*/
+#hobbies ul {
+     text-align: center;
+    padding: 2rem;
     list-style-position: inside;
+    background-color: #F4306E;
+    max-width: 800px;
+    margin: 1rem auto;
+    border: 3px solid #1600C2;
+    border-radius: 12px;
+    color: whitesmoke;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 div {
@@ -65,57 +99,86 @@ div {
 
 /*Gallery */
 figure {
-    background-color:#F4306E;
-
+ background-color: gray;
+    padding: 1rem;
+    margin: 1rem auto;
+    border: 3px solid #1600C2;
+    border-radius: 15px;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 #gallery {
     border: 4px solid #1600C2;
     margin-bottom: 1rem;
+    padding: 2rem;
+    background-color: #F4306E;
+    border-radius: 15px;
 }
 
 #gallery img {
-    max-width: 28%;
+     width: 300px;
+    max-width: 90%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    
 }
+
 
 #gallery figure {
     text-align: center;
 }
 
-    /* Dracula Exerpt */
-#lit {
-    border: 4px; border-color: #1600C2;
-    margin-bottom: 1rem;
+#gallery figure:hover {
+    transform: scale(1);
+}
 
+    /* Blog */
+
+#lit {
+    background-color: #F4306E;
+    border: 4px solid #1600C2;
+    border-radius: 15px;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 900px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
 }
 
 #lit div {
-    padding: 1rem;
-    max-width: 35rem;
+     padding: 1rem;
+    max-width: 45rem;
     margin: 0 auto;
+    text-align: left;
 }
     /*Tablet size */
 @media screen and (min-width:960px) {
     
     figure{
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        
     }
     figcaption{
-        display: flex; 
-        justify-content: center;
-        align-items:center;
-        font-size: 2rem;
-        border: #1600C2;
-        border-width: 1rem;
+   font-weight: bold;
+    font-size: 1.1rem;
+    padding-top: 0.75rem;
+    color: whitesmoke;
     }
     figure img {
         width: 100%;
     }
     #lit div {
-        max-width: 100%;
-        columns: 25rem;
+       max-width: 45rem;
+    columns: 1;
     }
+
+    #lit p {
+    color: whitesmoke;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
 }
     /*Large Screen Size*/
    @media screen and (min-width: 100em) {
@@ -133,13 +196,19 @@ figure {
         display: block;
     }
    }
+
+
     /* Video */
     #Media iframe {
-  width: 100%;
-  max-width: 800px;
-  aspect-ratio: 16 / 9;
-  height: auto;
+   width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 4px solid #1600C2;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
 }
+
 
 #Media {
     text-align: center;
@@ -160,6 +229,9 @@ row-gap: 0.5em;
     margin: 2rem auto;
     background-color: #F4306E;
     color: white;
+    border: 4px solid #1600C2;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
 }
 
 fieldset {
