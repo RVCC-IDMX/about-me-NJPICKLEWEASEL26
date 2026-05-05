@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overlock+SC&family=Rye&display=swap" rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="img/CWlogo.png">
     <link href="CSS/style.css" rel="stylesheet">
     <link href="CSS/nav.css" rel="stylesheet">
 
@@ -21,9 +21,16 @@
     <header>
         <nav class="navbar">
     <div class="logo">
-        <img src="img/WPRlogo.jpg" alt="WalshPC Repairs logo">
+        <img src="img/CWlogo.png" alt="WalshPC Repairs logo">
         <h1>Web Dev I</h1>
     </div>
+
+    <div class="toggle-button" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+</div>
+
     <div class="navbar-links">
     <ul>
        <li><a href="#bio">Bio</a></li>
@@ -210,9 +217,20 @@
 
     <footer>
 
-        ©2026 - Casey Walsh
+       <p>©2026 - Casey Walsh</p>
+
+    <p>
+        <a href="https://github.com/RVCC-IDMX/about-me-NJPICKLEWEASEL26" target="_blank">GitHub Repo</a>
+    </p>
 
     </footer>
+
+    <script>
+function myFunction(x) {
+    x.classList.toggle("change");
+    document.querySelector(".navbar-links").classList.toggle("active");
+}
+</script>
 
 </body>
 
