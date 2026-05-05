@@ -130,6 +130,7 @@ figure {
     padding: 2rem;
     background-color: #F4306E;
     border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
 }
 
 #gallery img {
@@ -147,7 +148,7 @@ figure {
 }
 
 #gallery figure:hover {
-    transform: scale(1);
+    transform: scale(1.05);
 }
 
     /* Blog */
