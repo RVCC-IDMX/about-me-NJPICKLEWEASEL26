@@ -198,35 +198,30 @@ figure {
 }
 }
  @media screen and (min-width: 100em) {
-{
 
-    /* Turn the gallery into a clean 3‑column grid */
+
+    /* Turns the gallery into a clean 3‑column grid */
     #gallery {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
-        align-items: start;
+        align-items:start;
     }
 
-    /* Make the title span all columns */
     #gallery > h2 {
         grid-column: 1 / -1;
         text-align: center;
     }
 
-    /* Hide <hr> so they don't become grid items */
     #gallery > hr {
         display: none;
     }
 
-    /* Let the grid control spacing */
     #gallery figure {
         margin: 0;
     }
 }
 
-
- }
 
    
 
